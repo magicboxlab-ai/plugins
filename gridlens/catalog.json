@@ -1,0 +1,47 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-04-15T01:30:31+00:00",
+  "plugins": [
+    {
+      "name": "dbip_country",
+      "description": "GeoIP country lookup (DB-IP Lite). Adds ISO-code + country-name columns from an IP column.",
+      "author": "GridLens",
+      "homepage": null,
+      "license": null,
+      "api_version": "1",
+      "versions": [
+        {
+          "version": "1.0.0",
+          "released_at": "2026-04-15",
+          "downloads": {
+            "macosx_11_0_arm64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.0.0-macosx_11_0_arm64.glplugin",
+              "sha256": "786091a25e1abae71e9550043b1830b0c5c9013d258368087cb1277e295c1f09",
+              "size_bytes": 38252
+            },
+            "macosx_11_0_x86_64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.0.0-macosx_11_0_x86_64.glplugin",
+              "sha256": "cb5741628a988ca04218b7d03077b6d03e914b22eb0fb660099ef6fabd603f62",
+              "size_bytes": 38818
+            },
+            "manylinux2014_aarch64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.0.0-manylinux2014_aarch64.glplugin",
+              "sha256": "fdc09f7990e87a187fb9dfa6b6f189312e6fb179ecf8dedee64596d2e2518406",
+              "size_bytes": 105097
+            },
+            "manylinux2014_x86_64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.0.0-manylinux2014_x86_64.glplugin",
+              "sha256": "885daf48775fdb255f9be00ac9b661be7978a16394b14519a3321d197efc28f7",
+              "size_bytes": 103492
+            },
+            "win_amd64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.0.0-win_amd64.glplugin",
+              "sha256": "46836951608608e6c9d5990ddc071bb265be49e7e9eb06472771b03bdde6bd58",
+              "size_bytes": 40897
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
