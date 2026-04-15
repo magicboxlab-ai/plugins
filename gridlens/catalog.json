@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-04-15T01:30:31+00:00",
+  "updated_at": "2026-04-15T02:29:24+00:00",
   "plugins": [
     {
       "name": "dbip_country",
@@ -10,6 +10,37 @@
       "license": null,
       "api_version": "1",
       "versions": [
+        {
+          "version": "1.1.0",
+          "released_at": "2026-04-15",
+          "downloads": {
+            "macosx_11_0_arm64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.1.0-macosx_11_0_arm64.glplugin",
+              "sha256": "d2fa6a11ded42382fca8b5a4b8772c0f985f9218aa0113a059c18ed8b969a406",
+              "size_bytes": 39170
+            },
+            "macosx_11_0_x86_64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.1.0-macosx_11_0_x86_64.glplugin",
+              "sha256": "f9cca1f203f8f2f87a87f3ce800de3011dc3aa864d567c10ff3d772e11fc9e3e",
+              "size_bytes": 39736
+            },
+            "manylinux2014_aarch64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.1.0-manylinux2014_aarch64.glplugin",
+              "sha256": "901640e9deb3f986f67c1996e55a55158a4836c5715b46f3a65c6aee1496e546",
+              "size_bytes": 106015
+            },
+            "manylinux2014_x86_64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.1.0-manylinux2014_x86_64.glplugin",
+              "sha256": "87b16b603d9fb62189b461ce64f6f8d8253054a918e112d0b8075e013867fa60",
+              "size_bytes": 104410
+            },
+            "win_amd64": {
+              "url": "https://plugins.magicboxlab.ai/gridlens/bundles/dbip_country-1.1.0-win_amd64.glplugin",
+              "sha256": "c03b1e3fb6fba5ea7da70bde0789f3fe0a63e132ee6abab81b43926882733e54",
+              "size_bytes": 41815
+            }
+          }
+        },
         {
           "version": "1.0.0",
           "released_at": "2026-04-15",

@@ -2,7 +2,7 @@
 
 This directory holds the **publishable artifacts** for the MagicBoxLab
 plugin-hosting site at `https://plugins.magicboxlab.ai/`. The site is a
-single GitHub Pages deploy in `magicboxlab-ai/gridlens-plugins`; each
+single GitHub Pages deploy in `magicboxlab-ai/plugins`; each
 product gets its own subdirectory so we can host more than just GridLens
 on the same domain later.
 
@@ -36,7 +36,7 @@ https://plugins.magicboxlab.ai/gridlens/
 ```
 
 `plugins.magicboxlab.ai` is a CNAME for the
-`magicboxlab-ai/gridlens-plugins` GitHub Pages site (custom-domain
+`magicboxlab-ai/plugins` GitHub Pages site (custom-domain
 support enabled via the `CNAME` file at the repo root). The default
 catalog URL hard-coded in `src/pluginCatalogStore.ts` matches, so end
 users get this catalog out of the box — and we can move providers later
@@ -47,7 +47,8 @@ without breaking installed clients.
 ### One-time setup
 
 1. In the `magicboxlab-ai` GitHub org, create a public repo named
-   `gridlens-plugins`.
+   `plugins` (one umbrella repo per the domain — each MagicBoxLab
+   product gets its own top-level subdirectory under it).
 2. Push this directory's contents (everything under
    `published-catalog/`, including `CNAME` at the repo root and
    `gridlens/…` underneath) to the repo's `main` branch.
@@ -82,8 +83,8 @@ python -m gridlens.plugins catalog published-catalog/gridlens/bundles \
 # 3. Commit, then mirror to the publishing repo.
 git add published-catalog
 git commit -m "publish: dbip_country 1.0.0"
-rsync -a --delete published-catalog/ /path/to/gridlens-plugins-repo/
-cd /path/to/gridlens-plugins-repo && git commit -am "publish: dbip_country 1.0.0" && git push
+rsync -a --delete published-catalog/ /path/to/plugins-repo/
+cd /path/to/plugins-repo && git commit -am "publish: dbip_country 1.0.0" && git push
 ```
 
 > **Note**: `--platform any` will fail for `dbip_country` because
@@ -95,7 +96,7 @@ The workflow in
 [`../docs/examples/plugin-catalog-action.yml`](../docs/examples/plugin-catalog-action.yml)
 does steps 1 and 2 on every push to `main` and pushes the result to
 GitHub Pages automatically. Drop it into
-`.github/workflows/build-catalog.yml` in `magicboxlab-ai/gridlens-plugins`
+`.github/workflows/build-catalog.yml` in `magicboxlab-ai/plugins`
 and remember to keep a `CNAME` file at the repo root (or have the
 workflow write one) so GitHub Pages keeps serving from
 `plugins.magicboxlab.ai` after each deploy.
